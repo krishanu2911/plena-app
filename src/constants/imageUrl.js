@@ -1,0 +1,1 @@
+export const cartBagIcon = "https://res.cloudinary.com/krishanucloud/image/upload/v1707851425/bag_ovpjw4.png";

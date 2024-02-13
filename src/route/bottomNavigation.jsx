@@ -6,7 +6,7 @@ const Tab = createBottomTabNavigator();
 const BottomNavigation = () => {
   return (
     <Tab.Navigator
-      initialRouteName="home"
+      initialRouteName="dashboard"
       screenOptions={{
         swipeEnabled: true,
         swipeEdgeWidth: 1,
@@ -14,7 +14,9 @@ const BottomNavigation = () => {
         drawerPosition: "right",
       }}
     >
-      <Tab.Screen name="home" component={HomeScreen} />
+      <Tab.Screen name="dashboard" component={HomeScreen} />
+      {/* <Tab.Screen name="" component={HomeScreen} />
+      <Tab.Screen name="home" component={HomeScreen} /> */}
     </Tab.Navigator>
   );
 };
