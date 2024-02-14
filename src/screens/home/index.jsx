@@ -16,7 +16,7 @@ const HomeScreen = () => {
           {/* Home Header */}
           <View
             style={{
-              minHeight: height * 0.3,
+              minHeight: height * 0.2,
             }}
           >
             <Header />
