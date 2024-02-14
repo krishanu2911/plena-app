@@ -4,13 +4,13 @@ import { cartBagIcon, downIcon, searchIcon } from "../../constants/imageUrl";
 
 const Header = () => {
   return (
-    <View className="h-full w-full bg-[#2A4BA0] flex px-6 pb-4 pt-6">
-      <View className="flex flex-row justify-between items-end">
+    <View className="bg-[#2A4BA0] flex px-6 pb-4 pt-6">
+      <View className="flex flex-row items-center justify-between">
         <Text className="text-white text-xl font-semibold">Hey, Rahul</Text>
         <Image
           source={{ uri: cartBagIcon }}
           resizeMode="contain"
-          className="w-6 h-6"
+          className="w-5 h-5"
         />
       </View>
       <View className="flex flex-row items-center bg-[#153075] rounded-full py-4 px-6 mt-10">
@@ -29,11 +29,11 @@ const Header = () => {
       </View>
       <View className="flex flex-row items-center justify-between mt-10">
         <View>
-          <Text className="text-[#F8F9FB]/50 text-sm font-semibold">
+          <Text className="text-[#F8F9FB]/50 text-xs font-semibold">
             DELIVERY TO
           </Text>
           <View className="flex flex-row items-center">
-            <Text className="text-[#F8F9FB] text-base font-medium">
+            <Text className="text-[#F8F9FB] text-sm font-medium">
               Green Way 3000, Sylhet
             </Text>
             <TouchableOpacity>
@@ -47,11 +47,11 @@ const Header = () => {
         </View>
 
         <View>
-          <Text className="text-[#F8F9FB]/50 text-sm font-semibold">
+          <Text className="text-[#F8F9FB]/50 text-xs font-semibold">
             WITHIN
           </Text>
           <View className="flex flex-row items-center">
-            <Text className="text-[#F8F9FB] text-base font-medium">1 Hour</Text>
+            <Text className="text-[#F8F9FB] text-sm font-medium">1 Hour</Text>
             <TouchableOpacity>
               <Image
                 source={{ uri: downIcon }}
