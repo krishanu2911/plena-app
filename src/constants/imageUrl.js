@@ -8,6 +8,6 @@ export const imgPlaceHolder =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1707889179/imgGrey_t1cppe.png";
 export const heartOutline =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1707910426/heartOutline_amxugv.png";
-export const heratFilled =
+export const heartFilled =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1707910426/redHeart_uo4bxx.png";
-  
+

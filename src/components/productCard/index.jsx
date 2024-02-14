@@ -1,9 +1,16 @@
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { heartOutline, heratFilled } from "../../constants/imageUrl";
+import { heartOutline, heartFilled } from "../../constants/imageUrl";
 import { useShopStore } from "../../store/shopStore";
 
 const ProductCard = ({ productData }) => {
-  const addToCart = useShopStore((state) => state.addToCart);
+  const { addToCart, wishlistHandler, wishlistItem } = useShopStore(
+    (state) => ({
+      addToCart: state.addToCart,
+      wishlistHandler: state.wishlistHandler,
+      wishlistItem: state.wishlistItem,
+    })
+  );
+
   return (
     <View className="w-[50%] h-64 p-2">
       <View className="flex relative justify-between flex-1 rounded-xl bg-[#F8F9FB]">
@@ -23,9 +30,14 @@ const ProductCard = ({ productData }) => {
             </View>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity className="w-6 h-6 absolute top-4 left-4">
+        <TouchableOpacity
+          onPress={() => wishlistHandler(productData)}
+          className="w-6 h-6 absolute top-4 left-4"
+        >
           <Image
-            source={{ uri: heartOutline }}
+            source={{
+              uri: wishlistItem[productData.id] ? heartFilled : heartOutline,
+            }}
             resizeMode="contain"
             className="w-full h-full"
           />
