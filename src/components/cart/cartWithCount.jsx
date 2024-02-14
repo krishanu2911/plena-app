@@ -1,17 +1,19 @@
-import { Image, Text, View } from "react-native";
-import { cartBagIcon } from "../../constants/imageUrl";
+import { Image, Text, TouchableOpacity, View } from "react-native";
+import { cartBagIcon, cartDarkBagIcon } from "../../constants/imageUrl";
 import { useShopStore } from "../../store/shopStore";
+import { useNavigation } from "@react-navigation/native";
 
-const CartWithCount = () => {
+const CartWithCount = ({darkTheme}) => {
+  const navigation = useNavigation();
   const cartItems = useShopStore((state) => Object.values(state.cartItem));
   console.log("cartItems from store", cartItems);
   const count = cartItems.reduce((acc, crr) => {
     return acc + crr.count;
   }, 0);
   return (
-    <View className="relative">
+    <TouchableOpacity onPress={() => navigation.navigate("cart")} className="relative">
       <Image
-        source={{ uri: cartBagIcon }}
+        source={{ uri: darkTheme ? cartDarkBagIcon : cartBagIcon }}
         resizeMode="contain"
         className="w-6 h-6"
       />
@@ -20,7 +22,7 @@ const CartWithCount = () => {
           <Text className="text-xs text-white">{count || 0}</Text>
         </View>
       )}
-    </View>
+    </TouchableOpacity>
   );
 };
 
