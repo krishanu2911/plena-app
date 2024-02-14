@@ -1,17 +1,19 @@
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { cartBagIcon, downIcon, searchIcon } from "../../constants/imageUrl";
+import CartWithCount from "../cart/cartWithCount";
 
 const Header = () => {
   return (
     <View className="bg-[#2A4BA0] flex px-6 pb-4 pt-6">
       <View className="flex flex-row items-center justify-between">
         <Text className="text-white text-xl font-semibold">Hey, Rahul</Text>
-        <Image
+        <CartWithCount/>
+        {/* <Image
           source={{ uri: cartBagIcon }}
           resizeMode="contain"
           className="w-5 h-5"
-        />
+        /> */}
       </View>
       <View className="flex flex-row items-center bg-[#153075] rounded-full py-4 px-6 mt-10">
         <TouchableOpacity>

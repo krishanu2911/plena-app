@@ -14,14 +14,21 @@ export const useShopStore = create((set, get) => ({
       const { cartItem } = get();
       const presentItem = cartItem[item.id];
       const updatedCount = presentItem ? presentItem.count + 1 : 1;
-
+      console.log("persentItem", presentItem);
+      console.log({
+        ...state.cartItem,
+        [presentItem?.item?.id]: {
+          ...presentItem,
+          count: updatedCount,
+        },
+      });
       // Checking if item exists and updating existing item.
       if (presentItem) {
         return {
           ...state,
           cartItem: {
             ...state.cartItem,
-            [presentItem.id]: {
+            [presentItem?.item?.id]: {
               ...presentItem,
               count: updatedCount,
             },
@@ -34,7 +41,8 @@ export const useShopStore = create((set, get) => ({
           cartItem: {
             ...state.cartItem,
             [item.id]: {
-              ...item,
+              // ...item,
+              item: item,
               count: updatedCount,
             },
           },
