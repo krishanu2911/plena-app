@@ -98,7 +98,7 @@ const SingleProductScreen = () => {
                     <Text className="text-base text-white">$22.9 off</Text>
                   </View>
                 </View>
-                <View className="flex flex-row my-8">
+                <View className="flex flex-row my-6">
                   <TouchableOpacity
                     onPress={addToCartHandler}
                     className="border border-[#153075] flex-1 p-4 rounded-3xl mr-6"
@@ -118,7 +118,7 @@ const SingleProductScreen = () => {
                 </View>
                 <View>
                   <Text className=" text-xl mb-2">Detail</Text>
-                  <Text className=" text-xl text-black/50">
+                  <Text className=" text-sm text-black/50">
                     {prodData?.description}
                   </Text>
                 </View>
