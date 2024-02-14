@@ -6,7 +6,6 @@ import { useNavigation } from "@react-navigation/native";
 const CartWithCount = ({darkTheme}) => {
   const navigation = useNavigation();
   const cartItems = useShopStore((state) => Object.values(state.cartItem));
-  console.log("cartItems from store", cartItems);
   const count = cartItems.reduce((acc, crr) => {
     return acc + crr.count;
   }, 0);
