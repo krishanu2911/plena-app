@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { Platform, ScrollView, Text, View } from "react-native";
+import { ScrollView, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import HeaderV2 from "../../components/header/headerV2";
 import { useShopStore } from "../../store/shopStore";
@@ -12,17 +12,16 @@ const CartScreen = () => {
       <StatusBar />
       <SafeAreaView edges={["top"]} className="flex-1 flex">
         <View className="flex-1">
-         <HeaderV2 headerTitle={"Hello"} />
-        <ScrollView className="flex-1 px-6">
-          {cartItems.map((product) => {
-            return <CartItem key={product.item.id}  product={product} />;
-          })}
-        </ScrollView>
-        <View className="absolute bottom-0 left-0 right-0 px-4">
-          <CheckoutSection />
-        </View> 
+          <HeaderV2 headerTitle={`Shoping Cart`} showCart={false} />
+          <ScrollView className="flex-1 px-6">
+            {cartItems.map((product) => {
+              return <CartItem key={product.item.id} product={product} />;
+            })}
+          </ScrollView>
+          <View className="absolute bottom-0 left-0 right-0 px-4">
+            <CheckoutSection />
+          </View>
         </View>
-        
       </SafeAreaView>
     </>
   );

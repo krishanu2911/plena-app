@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeScreen } from "../screens";
+import { FavouriteScreen, HomeScreen } from "../screens";
 import { View } from "react-native";
 import CustomTab from "../components/customTab";
 import { categoryBlack, categoryYellow, heartFilled, heartOutline, homeBlack, homeYellow, threeDot } from "../constants/imageUrl";
@@ -59,7 +59,7 @@ const BottomNavigation = () => {
           ),
         }}
         name="Favourite"
-        component={HomeScreen}
+        component={FavouriteScreen}
       />
       <Tab.Screen
         options={{

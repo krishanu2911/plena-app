@@ -17,7 +17,7 @@ const CartItem = ({ product }) => {
           className="w-14 h-14"
         />
         <View className="flex items-start ml-4">
-          <Text className="text-sm text-black font-semibold">
+          <Text className="text-sm text-black font-semibold w-36">
             {product.item.title}
           </Text>
           <Text className="text-sm text-black">${product.item.price}</Text>
