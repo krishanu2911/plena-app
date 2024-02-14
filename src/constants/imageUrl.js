@@ -14,3 +14,13 @@ export const heartFilled =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1707910426/redHeart_uo4bxx.png";
 export const backIcon =
   "https://res.cloudinary.com/krishanucloud/image/upload/v1707917210/backArrow_naipuv.png";
+export const homeBlack =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1707943904/home_rjtneb.png";
+export const homeYellow =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1707944033/homeYellow_c9bfry.png";
+export const categoryBlack =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1707944227/Category_tlpbvr.png";
+export const categoryYellow =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1707944233/CategoryYellow_spjs0k.png";
+export const threeDot =
+  "https://res.cloudinary.com/krishanucloud/image/upload/v1707944291/threeDot_bwybca.png";
