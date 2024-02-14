@@ -20,7 +20,9 @@ const CheckoutSection = () => {
       <View className="w-full">
         <View className="flex flex-row w-full justify-between px-2 mb-2">
           <Text className="text-base text-black/50">Subtotal</Text>
-          <Text className="text-base text-black font-semibold">${subtotal}</Text>
+          <Text className="text-base text-black font-semibold">
+            ${subtotal}
+          </Text>
         </View>
         <View className="flex flex-row w-full justify-between px-2 mb-2">
           <Text className="text-base text-black/50">Delivery</Text>
@@ -28,7 +30,9 @@ const CheckoutSection = () => {
         </View>
         <View className="flex flex-row w-full justify-between px-2 mb-2">
           <Text className="text-base text-black/50">Total</Text>
-          <Text className="text-base text-black font-semibold">${subtotal + 2}</Text>
+          <Text className="text-base text-black font-semibold">
+            ${subtotal + 2}
+          </Text>
         </View>
       </View>
 
