@@ -12,7 +12,7 @@ const CartScreen = () => {
       <StatusBar />
       <SafeAreaView edges={["top"]} className="flex-1 flex">
         <View className="flex-1">
-         <HeaderV2 showCart={true} headerTitle={"Hello"} />
+         <HeaderV2 headerTitle={"Hello"} />
         <ScrollView className="flex-1 px-6">
           {cartItems.map((product) => {
             return <CartItem key={product.item.id}  product={product} />;
