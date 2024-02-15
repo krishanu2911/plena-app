@@ -2,6 +2,12 @@
 
 ## Demo
 
+### IOS
+https://github.com/krishanu2911/plena-app/assets/75560307/d7ef3fec-b3a1-4a15-a630-9dc74f78f8f4
+
+### ANDROID
+https://github.com/krishanu2911/plena-app/assets/75560307/ee61ff6e-0a00-432d-90db-c9a2e944bd22
+
 ## Tech
 - React Native
 - zustand (State management)
